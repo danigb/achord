@@ -1,0 +1,20 @@
+{
+  "name": "achord",
+  "version": "0.1.0",
+  "description": "Music chord detector",
+  "main": "index.js",
+  "scripts": {
+    "test": "vows test/*.js"
+  },
+  "keywords": [
+    "chord",
+    "music",
+    "solfege"
+  ],
+  "author": "danigb",
+  "license": "MIT",
+  "devDependencies": {
+    "daccord": "^1.1.0",
+    "vows": "^0.8.1"
+  }
+}

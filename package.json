@@ -6,6 +6,10 @@
   "scripts": {
     "test": "vows test/*.js"
   },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/danigb/achord.git"
+  },
   "keywords": [
     "chord",
     "music",
@@ -13,6 +17,10 @@
   ],
   "author": "danigb",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danigb/achord/issues"
+  },
+  "homepage": "https://github.com/danigb/achord",
   "devDependencies": {
     "daccord": "^1.1.0",
     "vows": "^0.8.1"

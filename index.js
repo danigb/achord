@@ -19,7 +19,7 @@ module.exports = function(intervals) {
   chord = chord.replace(/d5-/, 'b5');
   chord = chord.replace(/M#5/, '#5')
   chord = chord.replace(/Mb5/, 'b5')
-  chord = chord.replace(/mb5/, 'o')
+  chord = chord.replace(/mb5/, 'ø')
 
   chord = chord.replace(/m6-/, 'b6');
   chord = chord.replace(/M6-/, '6');
@@ -29,9 +29,10 @@ module.exports = function(intervals) {
 
   chord = chord.replace(/m7-/, '7');
   chord = chord.replace(/M7-/, 'Maj7');
-
+  chord = chord.replace(/d7-/, 'b7');
   chord = chord.replace(/MMaj7/, 'Maj7');
-  chord = chord.replace(/o7/, '7b5');
+  chord = chord.replace(/ø7/, '7b5');
+  chord = chord.replace(/øb7/, 'ø7');
   chord = chord.replace(/sus47/, '7sus4');
 
   chord = chord.replace(/m9-/, 'b9');
@@ -48,10 +49,13 @@ module.exports = function(intervals) {
   chord = chord.replace(/P11-/, '11');
   chord = chord.replace(/A11-/, '#11');
   chord = chord.replace(/9#11/, '#11');
+  chord = chord.replace(/m7911/, 'm11');
 
   chord = chord.replace(/M13-/, '13');
   chord = chord.replace(/913/, '13');
   chord = chord.replace(/91113/, '13');
+
+  chord = chord.replace(/M7/, '7');
 
   if(chord === '') chord = '5';
   return chord;

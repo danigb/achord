@@ -19,6 +19,7 @@ addTest('#5', ['P1', 'M3', 'A5']);
 addTest('6', ['P1', 'M3', 'P5', 'M6']);
 addTest('#6', ['P1', 'M3', 'P5', 'A6']);
 addTest('Maj7', ['P1', 'M3', 'P5', 'M7']);
+addTest('7', ['P1', 'M3', 'P5', 'm7']);
 addTest('#5Maj7', ['P1', 'M3', 'A5', 'M7']);
 addTest('7b5', ['P1', 'M3', 'd5', 'm7']);
 addTest('9', ['P1', 'M3', 'P5', 'm7', 'M9']);
@@ -44,7 +45,7 @@ addTest('5', ['P1', 'P5']);
 
 addTest('#5#9', ['P1', 'M3', 'A5', 'm7', 'A9']);
 addTest('m(11b5b9)', ['P1', 'm3', 'd5', 'm7', 'm9', 'P11']);
-addTest('min11', ['P1', 'm3', 'P5', 'm7', 'M9', 'P11']);
+addTest('m11', ['P1', 'm3', 'P5', 'm7', 'M9', 'P11']);
 addTest('m13b5#9', ['P1', 'm3', 'd5', 'm7', 'A9', 'P11', 'M13']);
 
 vows.describe('AChord').addBatch(tests).export(module);
